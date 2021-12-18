@@ -1,67 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What is it?</title>
-    <style>
-         @media screen and (min-width: 200px) {
-            .Mobile {
-                background-color: red;
-                color: white;
-            }
-        }
-        @media screen and (max-width: 361px) {
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-            .Mobile {
-                background-color: red;
-                color: white;
-            }
-        }
+@media screen and (max-width: 360px) and (min-width: 200px){
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+}
 
-        @media screen and (min-width: 362px) {
-            .Ipad {
-                background-color: red;
-                color: white;
-            }
-        }
-        @media screen and (max-width: 810px) {
+@media screen and (min-width: 361px)and (max-width: 810px){
+  div.example1 {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: green;
+  }
+}
 
-            .Ipad {
-                background-color: red;
-                color: white;
-            }
-        }
-
-        @media screen and (min-width: 811px) {
-            .Laptop {
-                background-color: red;
-                color: white;
-            }
-        }
-
-        @media screen and (max-width: 1600px) {
-
-            .Laptop {
-                background-color: red;
-                color: white;
-            }
-        }
-    </style>
+@media screen and (min-width: 811px)and (max-width: 1570px){
+  div.example2 {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: blue;
+  }
+}
+</style>
 </head>
-
 <body>
-    <div class="Laptop">
-        Laptop
-    </div>
-    <div class="Ipad">
-        Ipad
-    </div>
-    <div class="Mobile">
-        Mobile
-    </div>
-</body>
 
+
+<div class="example">This is Mobile.</div>
+<div class="example1">This is Ipad.</div>
+<div class="example2">This is Laptop.</div>
+
+
+</body>
 </html>
